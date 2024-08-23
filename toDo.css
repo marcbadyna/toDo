@@ -1,0 +1,137 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: bisque;
+    color: cornflowerblue;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.nav-bar a:hover {
+    color: brown;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#content {
+    box-sizing: content-box;
+    width: min(95%, 70rem);
+    height: min(85%, 70rem);
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-block: 2rem;
+    margin-inline: auto;
+    margin-top: 130px;
+}
+
+.item {
+    border: none;
+    border-radius: .8em;
+    overflow: hidden;
+}
+
+.grid-task {
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 5;
+}
+
+.grid-quote {
+    background-color: darkkhaki;
+    padding: 10px;
+    margin: 0;
+    grid-column: 1 / span 5;
+    grid-row: 6 / span 1;
+    text-align: center;
+}
+
+.grid-journal {
+    background-color: darkseagreen;
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 5;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.list-item-inputs {
+    gap: 0.5rem;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.journal-entry {
+    border: none;
+    border-radius: .5em;
+    padding: 5px;
+    margin: 0;
+    width: 75%;
+    height: 75%;
+    font-size: 10pt;
+    line-height: 1.5;
+}
+
+.input-style {
+    border: none;
+    border-radius: .5em;
+    min-width: 0;
+    padding: 5px;
+}
+
+.add-btn {
+    border: none;
+    border-radius: .8em;
+    padding: 0.2rem 1rem;
+    flex: 0 0 auto;
+}
+
+/*@media (max-width: 600px) {
+    #content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}*/

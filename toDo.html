@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toDo.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <header>
+        <h1>To-Do</h1>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div class="item grid-task">
+            <div class="list-item-inputs">
+                <input class="input-style" type="text" name="task-entered" placeholder="Task..." />
+                <input class="input-style" type="time" name="time-entered" />
+                <input class="input-style" type="text" name="description-entered" placeholder="Description..." />
+                <button class="add-btn" type="button">Add</button>
+            </div>
+        </div>
+        <section class="item grid-quote">
+            <blockquote>
+                "The journey of a thousand miles begins with a single step."
+            </blockquote>
+        </section>
+        <section class="item grid-journal">
+            <textarea class="journal-entry" name="journal-entered" rows="4" cols="20"
+                placeholder="Journal entry..."></textarea>
+        </section>
+    </div>
+    <footer>
+        <blockquote>
+            "The first lesson on how to learn: Trust that you can learn."
+        </blockquote>
+    </footer>
+</body>
+
+</html>
